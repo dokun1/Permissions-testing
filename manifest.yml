@@ -1,6 +1,8 @@
-  applications:
-   - name: david-okun-permissions-error-fix
-     random-route: true
-     memory: 128M
-     command: david-okun-permissions-error-fix
-     buildpack: swift_buildpack
+applications:
+- name: david-okun-permissions-error-fix
+  memory: 256M
+  instances: 1
+  random-route: true
+  disk_quota: 1024M
+  command: david-okun-permissions-error-fix
+  buildpack: swift_buildpack
