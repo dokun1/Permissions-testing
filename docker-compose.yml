@@ -1,0 +1,7 @@
+app:
+ image: ibmcom/swift-ubuntu:3.1.1
+ ports:
+   - "8080:8080"
+ volumes:
+   - .:/root/david-okun-permissions-error-fix
+ command: bash -c "cd /root/david-okun-permissions-error-fix && swift package clean && swift build && ./.build/debug/david-okun-permissions-error-fix"
